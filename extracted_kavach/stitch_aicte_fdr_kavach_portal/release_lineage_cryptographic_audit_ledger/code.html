@@ -1,0 +1,397 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-primary-fixed": "#001551", "on-tertiary-fixed-variant": "#6e3900", "tertiary-container": "#8d4b00", "surface-container-lowest": "#ffffff", "outline": "#747686", "tertiary": "#6b3700", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "primary-fixed": "#dce1ff", "inverse-primary": "#b7c4ff", "on-surface-variant": "#434655", "on-secondary-fixed-variant": "#3f465c", "surface-variant": "#d3e4fe", "primary": "#0037b0", "secondary-container": "#dae2fd", "on-background": "#0b1c30", "primary-fixed-dim": "#b7c4ff", "on-primary-container": "#cad3ff", "on-secondary-fixed": "#131b2e", "surface-tint": "#2151da", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "surface-container": "#e5eeff", "surface-container-low": "#eff4ff", "on-tertiary-container": "#ffcba3", "on-error-container": "#93000a", "inverse-surface": "#213145", "outline-variant": "#c4c5d7", "surface": "#f8f9ff", "on-surface": "#0b1c30", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#5c647a", "tertiary-fixed": "#ffdcc3", "secondary-fixed-dim": "#bec6e0", "error-container": "#ffdad6", "primary-container": "#1d4ed8", "on-tertiary-fixed": "#2f1500", "on-primary-fixed-variant": "#0039b5", "on-secondary": "#ffffff", "background": "#f8f9ff", "tertiary-fixed-dim": "#ffb77d", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "surface-bright": "#f8f9ff", "secondary": "#565e74", "surface-dim": "#cbdbf5" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-lg": "1rem", "space-md": "0.75rem" }, "fontFamily": { "body-md": ["Public Sans"], "label-numeric": ["JetBrains Mono"], "headline-lg": ["Public Sans"], "body-sm": ["Public Sans"], "headline-md": ["Public Sans"], "headline-lg-mobile": ["Public Sans"], "headline-xl-mobile": ["Public Sans"], "label-badge": ["Public Sans"], "label-code": ["JetBrains Mono"], "headline-xl": ["Public Sans"], "body-lg": ["Public Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-numeric": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }], "label-badge": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "label-code": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 flex flex-col justify-between px-margin"><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">assured_workload</span></div><div class="flex flex-col"><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">AICTE-FDR-Kavach</span><span class="font-headline-md text-headline-md text-on-surface leading-tight">Release Lineage</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs pb-space-sm overflow-x-auto no-scrollbar"><button class="h-7 px-space-sm rounded-lg bg-surface-container-high flex items-center gap-space-xs text-on-surface shrink-0"><span class="material-symbols-outlined text-primary text-[14px]">badge</span><span class="font-body-sm text-body-sm">Nodal Officer</span></button><div class="h-7 px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-secondary text-[14px]">schedule</span><span class="font-label-code text-label-code">T+0 Live</span></div><button class="h-7 px-space-sm rounded-lg bg-surface-container-highest flex items-center gap-space-xs text-on-surface shrink-0"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span><span class="font-body-sm text-body-sm">Dual Sign</span></button><button class="h-7 px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-tertiary text-[14px]">flag</span><span class="font-body-sm text-body-sm">Disputed</span></button></div></div></header><main class="flex flex-col relative w-full pt-28 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Interactive View Segment Tabs -->
+<div class="px-margin pt-space-md pb-space-sm">
+<div class="flex p-1 rounded-xl bg-surface-container-high shadow-inner">
+<button class="flex-1 py-2 rounded-lg font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-primary shadow-sm" id="btn-tab-lineage" onclick="switchMainView('lineage')">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+<span class="">4-Bureau &amp; Lineage</span>
+</button>
+<button class="flex-1 py-2 rounded-lg font-body-sm text-body-sm flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface" id="btn-tab-audit" onclick="switchMainView('audit')">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span class="">SHA-256 Ledger</span>
+</button>
+</div>
+</div>
+<!-- VIEW 1: LINEAGE DAG & 4-BUREAU RELEASE -->
+<div class="flex flex-col gap-space-lg px-margin transition-opacity duration-200" id="view-lineage">
+<!-- SECTION A: DAG Explorer Header & Interactive Graph -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md tracking-tight">Renewal Lineage DAG</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bank of Baroda Deposit Chain #B-88301</p>
+</div>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container uppercase">Tier-1 Apex</span>
+</div>
+<!-- DAG Diagram Container -->
+<div class="relative flex flex-col items-center py-2">
+<!-- Node 1: Parent FDR -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+<div>
+<span class="font-label-code text-label-code font-bold text-on-surface">FDR-BARB-2018-OLD</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Bank of Baroda • Mandate #00492</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge">SUPERSEDED</span>
+</div>
+<div class="mt-space-sm grid grid-cols-2 gap-2 pt-space-xs bg-surface-container-lowest/60 rounded-lg p-2">
+<div>
+<span class="block font-body-sm text-[10px] text-on-surface-variant uppercase">Matured On</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">30 Jun 2026</span>
+</div>
+<div>
+<span class="block font-body-sm text-[10px] text-on-surface-variant uppercase">Secured Value</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">₹15,00,000</span>
+</div>
+</div>
+</div>
+<!-- DAG Connector with Gap Metric Badge -->
+<div class="relative flex flex-col items-center my-3 w-full">
+<div class="w-0.5 h-16 bg-outline-variant flex items-center justify-center relative">
+<!-- Pulsing flow line -->
+<div class="absolute inset-0 bg-error/30 w-full animate-pulse"></div>
+</div>
+<div class="absolute top-1/2 -translate-y-1/2 px-3 py-1 rounded-full bg-error-container text-on-error-container shadow-sm flex items-center gap-1.5 transition-all" id="coverage-gap-badge">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span class="font-label-badge text-label-badge whitespace-nowrap">Coverage Gap: 15 Days (Issued 15 Jul 2026)</span>
+</div>
+</div>
+<!-- Node 2: Child FDR -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+<div>
+<span class="font-label-code text-label-code font-bold text-on-surface">FDR-BARB-2026-NEW</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Bank of Baroda • Branch Vasant Kunj</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-badge text-label-badge flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] animate-spin">sync</span>
+              RENEWAL PENDING
+            </span>
+</div>
+<div class="mt-space-sm grid grid-cols-2 gap-2 pt-space-xs bg-surface-container-lowest/60 rounded-lg p-2">
+<div>
+<span class="block font-body-sm text-[10px] text-on-surface-variant uppercase">Matures On</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">15 Jul 2034</span>
+</div>
+<div>
+<span class="block font-body-sm text-[10px] text-on-surface-variant uppercase">Encashment Principal</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">₹15,00,000</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Regional Officer Condone Action Module -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-high/60 flex flex-col gap-2.5" id="condone-container">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Statutory Discretion Check</span>
+</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Auth: RO-NRO-774</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Per Clause 4.8.2(b), the Regional Nodal Officer possesses executive statutory sanction to condone inter-tenure issuance lapses up to 30 days.
+        </p>
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-[0.99] shadow-sm" id="btn-condone" onclick="handleCondone()">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+<span class="">Condone 15-Day Renewal Gap with Remarks</span>
+</button>
+</div>
+</div>
+<!-- SECTION B: 4-Pillar Parallel Clearance Board -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm gap-space-md" id="clearance-board-container"><div class="flex flex-col gap-2"><div class="flex items-center justify-between"><div><span class="font-headline-md text-headline-md tracking-tight">4-Bureau Clearance Board</span><p class="font-body-sm text-body-sm text-on-surface-variant" id="clearance-target-label">Active Target: FDR-ICIC-661029 (ICICI Bank • ₹20,00,000)</p></div><span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-badge text-label-badge" id="clearance-status-badge">1 BLOCKED</span></div><div class="flex items-center gap-1.5 p-1 rounded-lg bg-surface-container-high"><button class="flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all bg-surface-container-lowest text-primary shadow-xs" id="btn-case-locked" onclick="selectClearanceCase('locked')"><span class="material-symbols-outlined text-[14px]">gavel</span><span class="">Locked Injunction (ICICI)</span></button><button class="flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all text-on-surface-variant hover:text-on-surface" id="btn-case-cleared" onclick="selectClearanceCase('cleared')"><span class="material-symbols-outlined text-[14px]">verified</span><span class="">Fully Cleared Case (HDFC)</span></button></div></div><div class="grid grid-cols-1 gap-2.5" id="clearance-cards-grid"><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">gavel</span><span class="font-body-md text-body-md font-semibold text-on-surface">1. Regulation Bureau</span></div><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">check_circle</span> CLEARED</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">EoA Assessment (AY 2026-27)</span><span class="font-label-code text-label-code text-primary font-bold">Valid EoA Granted</span></div></div><div class="p-space-md rounded-xl bg-error-container/40 flex flex-col gap-2 transition-all" id="vigilance-card"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-error text-[18px]" id="vigilance-icon">policy</span><span class="font-body-md text-body-md font-semibold text-on-error-container" id="vigilance-title">2. Vigilance Cell</span></div><span class="px-2 py-0.5 rounded bg-error text-on-error font-label-badge text-label-badge flex items-center gap-1" id="vigilance-status-tag"><span class="material-symbols-outlined text-[12px]">block</span> ON HOLD</span></div><div class="bg-surface-container-lowest/80 p-2 rounded-lg" id="vigilance-body"><span class="block font-label-code text-label-code font-bold text-error" id="vigilance-case-title">Case #VIG/2025/88: Student Fee Inquiry</span><span class="block font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="vigilance-case-desc">Automated release freeze enforced on joint deposit ICICI FDR-661029. Injunction active.</span></div></div><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">balance</span><span class="font-body-md text-body-md font-semibold text-on-surface">3. Legal Cell</span></div><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">check_circle</span> CLEARED</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">High Court Writ Dockets</span><span class="font-label-code text-label-code text-on-surface font-semibold">No Active Injunctions</span></div></div><div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1.5"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">payments</span><span class="font-body-md text-body-md font-semibold text-on-surface">4. Finance Bureau</span></div><span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">check_circle</span> CLEARED</span></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-body-sm text-body-sm">Assessment Recovery Deduction</span><span class="font-label-code text-label-code text-on-surface font-semibold" id="finance-penalty-text">0% Penalty (Standard Release)</span></div></div></div><div class="flex flex-col gap-2 pt-space-xs" id="release-action-panel"><button class="w-full py-3 px-4 rounded-xl bg-surface-container-highest text-on-surface-variant opacity-60 cursor-not-allowed font-body-md text-body-md font-bold flex items-center justify-center gap-2 transition-all" disabled="" id="btn-release-clearance" onclick="openTOTPModal()"><span class="material-symbols-outlined text-[20px]" id="btn-release-icon">lock</span><span id="btn-release-text" class="">Authorize Release &amp; Draft NOC</span></button><div class="flex items-center justify-between px-1"><span class="font-body-sm text-[11px] text-error flex items-center gap-1" id="release-guard-text"><span class="material-symbols-outlined text-[14px]">lock_clock</span> Locked by Vigilance Hold (VIG/2025/88)</span><span class="font-label-badge text-[10px] text-on-surface-variant uppercase">HQ_ADMIN • TOTP MFA</span></div></div></div>
+</div>
+<!-- VIEW 2: TAMPER-EVIDENT SHA-256 AUDIT LEDGER -->
+<div class="hidden flex-col gap-space-lg px-margin transition-opacity duration-200" id="view-audit">
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- Ledger Header & Tools -->
+<div class="flex items-start justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">encrypted</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md tracking-tight">Cryptographic Ledger</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">SHA-256 Merkle-Chained Event Stream</p>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-code text-[11px]">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="">Block #44891</span>
+</div>
+</div>
+<!-- Action Verification Buttons Rail -->
+<div class="grid grid-cols-1 gap-2 pb-space-md">
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-[0.99] shadow-sm" id="btn-verify-chain" onclick="verifyHashChain()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">Verify Entire Hash Chain</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-2.5 rounded-lg bg-error-container text-on-error-container font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1 hover:bg-error hover:text-on-error transition-all active:scale-[0.99]" id="btn-tamper" onclick="simulateTamper()">
+<span class="material-symbols-outlined text-[16px]">bug_report</span>
+<span class="">Simulate Tamper</span>
+</button>
+<button class="py-2 px-2.5 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1 hover:bg-surface-container-highest transition-all active:scale-[0.99]" id="btn-restore" onclick="restoreCleanState()">
+<span class="material-symbols-outlined text-[16px]">restore</span>
+<span class="">Restore State</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Verification Banner Alert -->
+<div class="hidden mb-space-md p-space-md rounded-xl transition-all" id="integrity-banner">
+<!-- Injected via JavaScript -->
+</div>
+<!-- Cryptographic Event Stream (Seq #5 down to Seq #1) -->
+<div class="flex flex-col gap-3">
+<!-- Seq #5: FDR_SUBMITTED -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2 transition-all" id="card-seq-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-badge text-label-badge">SEQ #5</span>
+<span class="font-label-code text-label-code font-bold text-on-surface">FDR_SUBMITTED</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">10:42:19 UTC</span>
+</div>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-label-code text-[12px] bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Actor:</span>
+<span class="text-on-surface font-semibold">REGISTRAR_PID_402918</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Current Hash:</span>
+<span class="text-primary font-mono select-all" id="hash-seq-5">8f4a3e21...92b1cd45</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Previous Hash:</span>
+<span class="text-secondary font-mono select-all" id="prev-seq-5">3c1a88bb...77d402aa</span>
+</div>
+</div>
+</div>
+<!-- Seq #4: OCR_RECONCILIATION_FLAGGED -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2 transition-all" id="card-seq-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge">SEQ #4</span>
+<span class="font-label-code text-label-code font-bold text-on-surface" id="name-seq-4">OCR_RECONCILIATION_FLAGGED</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">10:41:05 UTC</span>
+</div>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-label-code text-[12px] bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Actor:</span>
+<span class="text-on-surface font-semibold" id="actor-seq-4">SCRUTINY_OFFICER_CRO</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Current Hash:</span>
+<span class="text-primary font-mono select-all" id="hash-seq-4">3c1a88bb...77d402aa</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Previous Hash:</span>
+<span class="text-secondary font-mono select-all">a29be810...110e53fa</span>
+</div>
+</div>
+</div>
+<!-- Seq #3: LIEN_MARKING_REGISTERED -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-badge text-label-badge">SEQ #3</span>
+<span class="font-label-code text-label-code font-bold text-on-surface">LIEN_MARKING_REGISTERED</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">10:39:44 UTC</span>
+</div>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-label-code text-[12px] bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Actor:</span>
+<span class="text-on-surface font-semibold">BANK_NODAL_BARB_90</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Current Hash:</span>
+<span class="text-primary font-mono select-all">a29be810...110e53fa</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Previous Hash:</span>
+<span class="text-secondary font-mono select-all">7b0e4511...02a399cc</span>
+</div>
+</div>
+</div>
+<!-- Seq #2: DUAL_SIGNATURE_INITIATED -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-badge text-label-badge">SEQ #2</span>
+<span class="font-label-code text-label-code font-bold text-on-surface">DUAL_SIGN_INITIATED</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">10:38:12 UTC</span>
+</div>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-label-code text-[12px] bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Actor:</span>
+<span class="text-on-surface font-semibold">SYSTEM_GATEWAY_NODE</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Current Hash:</span>
+<span class="text-primary font-mono select-all">7b0e4511...02a399cc</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Previous Hash:</span>
+<span class="text-secondary font-mono select-all">00000000...GENESIS_01</span>
+</div>
+</div>
+</div>
+<!-- Seq #1: GENESIS_BLOCK -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge">SEQ #1</span>
+<span class="font-label-code text-label-code font-bold text-on-surface">GENESIS_MINT</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">10:35:00 UTC</span>
+</div>
+<div class="grid grid-cols-1 gap-1 text-on-surface-variant font-label-code text-[12px] bg-surface-container-lowest/80 p-2 rounded-lg">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Root Anchor:</span>
+<span class="text-on-surface font-semibold">AICTE_SEC_ROOT_CERT_2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Genesis Hash:</span>
+<span class="text-primary font-mono select-all">00000000...GENESIS_01</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchMainView(target) {
+    const tabLineage = document.getElementById('btn-tab-lineage');
+    const tabAudit = document.getElementById('btn-tab-audit');
+    const viewLineage = document.getElementById('view-lineage');
+    const viewAudit = document.getElementById('view-audit');
+
+    if (target === 'lineage') {
+      tabLineage.className = 'flex-1 py-2 rounded-lg font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-primary shadow-sm';
+      tabAudit.className = 'flex-1 py-2 rounded-lg font-body-sm text-body-sm flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface';
+      viewLineage.classList.remove('hidden');
+      viewAudit.classList.add('hidden');
+    } else {
+      tabAudit.className = 'flex-1 py-2 rounded-lg font-body-sm text-body-sm font-semibold flex items-center justify-center gap-1.5 transition-all bg-surface-container-lowest text-primary shadow-sm';
+      tabLineage.className = 'flex-1 py-2 rounded-lg font-body-sm text-body-sm flex items-center justify-center gap-1.5 transition-all text-on-surface-variant hover:text-on-surface';
+      viewAudit.classList.remove('hidden');
+      viewLineage.classList.add('hidden');
+    }
+  }
+
+  function handleCondone() {
+    const container = document.getElementById('condone-container');
+    const badge = document.getElementById('coverage-gap-badge');
+
+    // Update the DAG gap badge
+    badge.className = 'absolute top-1/2 -translate-y-1/2 px-3 py-1 rounded-full bg-surface-container-highest text-primary shadow-sm flex items-center gap-1.5 transition-all';
+    badge.innerHTML = `
+      <span class="material-symbols-outlined text-[14px]">verified</span>
+      <span class="font-label-badge text-label-badge whitespace-nowrap">Gap Condoned: Order #RO-COND-2026/891</span>
+    `;
+
+    // Replace the action container with statutory signed token confirmation
+    container.className = 'mt-space-md p-space-md rounded-xl bg-surface-container-highest flex flex-col gap-2 transition-all';
+    container.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+          <span class="font-body-md text-body-md font-bold text-primary">Condonation Sanction Signed</span>
+        </div>
+        <span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-primary text-on-primary">TOKEN VERIFIED</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface">15-day renewal continuity granted under statutory discretion. DSC Hash <code class="font-label-code text-label-code font-bold">SHA: e3b0c44298fc1c149afbf4c8</code> registered in audit ledger.</p>
+    `;
+  }
+
+  function verifyHashChain() {
+    const banner = document.getElementById('integrity-banner');
+    banner.classList.remove('hidden');
+    banner.className = 'mb-space-md p-space-md rounded-xl bg-surface-container-highest text-primary flex items-center gap-2 transition-all';
+    banner.innerHTML = `
+      <span class="material-symbols-outlined text-[20px]">verified</span>
+      <div>
+        <span class="font-body-sm text-body-sm font-bold block">CRYPTOGRAPHIC CHAIN INTACT (All Hashes Verified)</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant block">5 consecutive block signatures re-computed matching SHA-256 root ledger.</span>
+      </div>
+    `;
+  }
+
+  function simulateTamper() {
+    const banner = document.getElementById('integrity-banner');
+    const card4 = document.getElementById('card-seq-4');
+    const card5 = document.getElementById('card-seq-5');
+    const hash4 = document.getElementById('hash-seq-4');
+    const name4 = document.getElementById('name-seq-4');
+    const actor4 = document.getElementById('actor-seq-4');
+
+    // Mutate Data at Seq #4
+    name4.textContent = "MANUAL_BALANCE_OVERRIDE";
+    name4.className = "font-label-code text-label-code font-bold text-error";
+    actor4.textContent = "UNAUTHORIZED_SQL_INJECTION";
+    actor4.className = "text-error font-bold";
+    hash4.textContent = "ff00dead...MUTATED_VALUE";
+    hash4.className = "text-error font-mono font-bold select-all";
+
+    // Style breached nodes
+    card4.className = "p-space-md rounded-xl bg-error-container text-on-error-container flex flex-col gap-2 transition-all";
+    card5.className = "p-space-md rounded-xl bg-error-container/50 text-on-error-container flex flex-col gap-2 transition-all";
+
+    banner.classList.remove('hidden');
+    banner.className = 'mb-space-md p-space-md rounded-xl bg-error text-on-error flex items-start gap-2 shadow-md transition-all';
+    banner.innerHTML = `
+      <span class="material-symbols-outlined text-[22px] shrink-0">crisis_alert</span>
+      <div>
+        <span class="font-body-sm text-body-sm font-bold block">TAMPER DETECTED AT SEQ #4</span>
+        <span class="font-body-sm text-[11px] text-on-error/90 block">Recomputed SHA-256 != Stored Event Hash. Cryptographic Cascade Broken at Seq #5 (Invalid Prev Hash pointer).</span>
+      </div>
+    `;
+  }
+
+  function restoreCleanState() {
+    const banner = document.getElementById('integrity-banner');
+    const card4 = document.getElementById('card-seq-4');
+    const card5 = document.getElementById('card-seq-5');
+    const hash4 = document.getElementById('hash-seq-4');
+    const name4 = document.getElementById('name-seq-4');
+    const actor4 = document.getElementById('actor-seq-4');
+
+    name4.textContent = "OCR_RECONCILIATION_FLAGGED";
+    name4.className = "font-label-code text-label-code font-bold text-on-surface";
+    actor4.textContent = "SCRUTINY_OFFICER_CRO";
+    actor4.className = "text-on-surface font-semibold";
+    hash4.textContent = "3c1a88bb...77d402aa";
+    hash4.className = "text-primary font-mono select-all";
+
+    card4.className = "p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2 transition-all";
+    card5.className = "p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2 transition-all";
+
+    banner.classList.remove('hidden');
+    banner.className = 'mb-space-md p-space-md rounded-xl bg-surface-container-high text-on-surface flex items-center gap-2 transition-all';
+    banner.innerHTML = `
+      <span class="material-symbols-outlined text-[20px] text-primary">history</span>
+      <div>
+        <span class="font-body-sm text-body-sm font-semibold block">Audit Trail Restored from Canonical Ledger</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant block">Immutable state re-anchored to AICTE Root Node certification.</span>
+      </div>
+    `;
+  }
+</script><div class="hidden fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm flex items-center justify-center p-4 transition-all" id="modal-totp-container"><div class="w-full max-w-sm bg-surface-container-lowest rounded-2xl shadow-xl border border-outline-variant/30 flex flex-col p-5 gap-4 relative animate-in fade-in"><button aria-label="Close TOTP Dialog" class="absolute top-3.5 right-3.5 text-on-surface-variant hover:text-on-surface w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container-high" onclick="closeTOTPModal()"><span class="material-symbols-outlined text-[20px]">close</span></button><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[22px]">shield_person</span></div><div><h3 class="font-headline-md text-[18px] leading-tight text-on-surface font-bold">High-Privilege MFA</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">TOTP Statutory Authorization</p></div></div><div class="bg-surface-container-low p-3 rounded-xl border border-outline-variant/20 flex flex-col gap-1"><span class="font-body-sm text-[11px] text-on-surface-variant uppercase font-semibold tracking-wider">Executive Sign-off Required</span><p class="font-body-sm text-[12px] text-on-surface leading-snug">Authorizing Statutory NOC for FDR <strong class="font-label-code text-primary">FDR-HDFC-551920</strong> (₹35,00,000).</p><div class="flex items-center gap-1.5 mt-1 pt-1 border-t border-outline-variant/30"><span class="material-symbols-outlined text-[14px] text-tertiary">key</span><span class="font-label-code text-[11px] text-on-surface-variant">Demo Code: <span class="font-bold text-primary font-mono">123456</span></span></div></div><div class="flex flex-col gap-2"><label class="font-body-sm text-[12px] text-on-surface font-semibold flex items-center justify-between"><span class="">Enter 6-digit TOTP Token</span><button class="text-[11px] text-primary hover:underline font-normal" onclick="autoFillTOTP()">Auto-fill Token</button></label><div class="flex items-center justify-between gap-1.5" id="totp-input-group"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-0" inputmode="numeric" maxlength="1" oninput="handleOtpInput(0)" onkeydown="handleOtpKey(event, 0)" type="text"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-1" inputmode="numeric" maxlength="1" oninput="handleOtpInput(1)" onkeydown="handleOtpKey(event, 1)" type="text"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-2" inputmode="numeric" maxlength="1" oninput="handleOtpInput(2)" onkeydown="handleOtpKey(event, 2)" type="text"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-3" inputmode="numeric" maxlength="1" oninput="handleOtpInput(3)" onkeydown="handleOtpKey(event, 3)" type="text"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-4" inputmode="numeric" maxlength="1" oninput="handleOtpInput(4)" onkeydown="handleOtpKey(event, 4)" type="text"><input autocomplete="off" class="w-10 h-12 text-center text-lg font-mono font-bold rounded-lg border border-outline-variant bg-surface text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="otp-5" inputmode="numeric" maxlength="1" oninput="handleOtpInput(5)" onkeydown="handleOtpKey(event, 5)" type="text"></div><span class="hidden text-[11px] text-error font-medium flex items-center gap-1 mt-1" id="totp-error-text"><span class="material-symbols-outlined text-[14px]">error</span> Invalid TOTP. Use demo code 123456</span></div><div class="flex items-center gap-2 pt-2"><button class="flex-1 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-body-sm font-semibold hover:bg-surface-container-highest transition-colors" onclick="closeTOTPModal()">Cancel</button><button class="flex-1 py-2.5 rounded-xl bg-primary text-on-primary font-body-sm font-semibold flex items-center justify-center gap-1.5 shadow-sm hover:bg-primary-container transition-all" id="btn-confirm-totp" onclick="validateTOTP()"><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="">Validate &amp; Sign</span></button></div></div></div><div class="hidden fixed inset-0 z-50 bg-on-surface/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto" id="modal-noc-container"><div class="relative w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/40 flex flex-col my-auto max-h-[92vh] overflow-hidden"><div class="flex items-center justify-between p-3.5 px-4 bg-surface-container border-b border-outline-variant/30"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center text-[16px]"><span class="material-symbols-outlined text-[16px]">verified</span></div><div><h3 class="font-headline-md text-[15px] font-bold text-on-surface leading-tight">Official Statutory Release NOC</h3><span class="font-label-code text-[11px] text-on-surface-variant">Ref: AICTE/NOC/RELEASE/2026/88491</span></div></div><div class="flex items-center gap-1.5"><button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant flex items-center justify-center" onclick="printNOC()" title="Print or Save as PDF"><span class="material-symbols-outlined text-[18px]">print</span></button><button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeNOCModal()"><span class="material-symbols-outlined text-[20px]">close</span></button></div></div><div class="p-4 sm:p-5 overflow-y-auto relative flex flex-col gap-4 text-on-surface" id="noc-printable-content"><div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden opacity-[0.07] rotate-[-25deg]"><span class="font-headline-xl font-bold text-[32px] sm:text-[38px] text-on-surface text-center uppercase tracking-widest leading-relaxed border-4 border-dashed border-on-surface p-4">DRAFT / PROTOTYPE AUTHORIZATION<br>REQUIRES CCA DSC IN PRODUCTION</span></div><div class="relative z-10 flex flex-col items-center text-center pb-2 border-b border-outline-variant/40"><div class="flex items-center gap-2 mb-1"><div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div><span class="font-bold text-[12px] uppercase tracking-wider block text-on-surface">All India Council for Technical Education</span><span class="text-[10px] text-on-surface-variant block">Statutory Body Under Ministry of Education, Govt. of India</span></div></div><span class="font-label-badge text-label-badge px-2.5 py-0.5 rounded-full bg-primary text-on-primary uppercase tracking-wider font-bold mt-1">Statutory No Objection Certificate (NOC)</span></div><div class="relative z-10 grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-xl border border-outline-variant/30 text-[11px]"><div><span class="text-on-surface-variant block uppercase text-[9px] font-semibold">Institution PID &amp; Name</span><strong class="text-on-surface text-[11px] block">1-883920112</strong><span class="text-on-surface-variant block text-[10px] truncate">Kalinga Inst. of Tech &amp; Mgmt</span></div><div><span class="text-on-surface-variant block uppercase text-[9px] font-semibold">FDR Identification</span><strong class="text-primary font-mono text-[11px] block">FDR-HDFC-551920</strong><span class="text-on-surface-variant block text-[10px]">HDFC Bank (IFSC: HDFC0001024)</span></div><div><span class="text-on-surface-variant block uppercase text-[9px] font-semibold">Statutory Reference</span><span class="font-mono text-on-surface text-[10px] block">AICTE/NOC/2026/88491</span></div><div><span class="text-on-surface-variant block uppercase text-[9px] font-semibold">Issue Timestamp</span><span class="font-mono text-on-surface text-[10px] block" id="noc-timestamp">17 May 2026, 14:32 IST</span></div></div><div class="relative z-10 bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-3 flex flex-col gap-1.5 shadow-xs"><span class="font-body-sm text-[11px] font-bold text-on-surface uppercase tracking-wider border-b border-outline-variant/20 pb-1">Encashment &amp; Deduction Schedule (APH Clause 5.1(a))</span><div class="flex justify-between items-center text-[12px]"><span class="text-on-surface-variant">Secured Principal Deposit:</span><span class="font-label-numeric font-bold text-on-surface">₹35,00,000</span></div><div class="flex justify-between items-center text-[12px]"><span class="text-on-surface-variant">Statutory Regulatory Deductions (0%):</span><span class="font-label-numeric font-semibold text-secondary">- ₹0</span></div><div class="flex justify-between items-center text-[12px] pt-1 border-t border-outline-variant/30 font-bold"><span class="text-primary">Net Authorized Releasable Value:</span><span class="font-label-numeric text-[14px] text-primary">₹35,00,000</span></div></div><div class="relative z-10 flex flex-col gap-1.5"><span class="font-body-sm text-[11px] font-bold text-on-surface uppercase tracking-wider">4-Bureau Clearance Verification Matrix</span><div class="border border-outline-variant/30 rounded-lg overflow-hidden text-[10px]"><table class="w-full text-left"><thead class="bg-surface-container font-semibold text-on-surface-variant"><tr><th class="p-1.5">Bureau</th><th class="p-1.5">Status</th><th class="p-1.5">Signer DSC / Hash</th></tr></thead><tbody class="divide-y divide-outline-variant/20 bg-surface-container-lowest"><tr class="bg-surface-container-lowest"><td class="p-1.5 font-medium">1. Regulation</td><td class="p-1.5 text-primary font-bold">CLEARED</td><td class="p-1.5 font-mono text-[9px] text-on-surface-variant">DSC: REG-APH-2026-904</td></tr><tr><td class="p-1.5 font-medium">2. Vigilance</td><td class="p-1.5 text-primary font-bold">CLEARED</td><td class="p-1.5 font-mono text-[9px] text-on-surface-variant">DSC: VIG-NOC-2026-118</td></tr><tr><td class="p-1.5 font-medium">3. Legal Cell</td><td class="p-1.5 text-primary font-bold">CLEARED</td><td class="p-1.5 font-mono text-[9px] text-on-surface-variant">DSC: LEG-HC-2026-773</td></tr><tr><td class="p-1.5 font-medium">4. Finance</td><td class="p-1.5 text-primary font-bold">CLEARED</td><td class="p-1.5 font-mono text-[9px] text-on-surface-variant">DSC: FIN-PAY-2026-442</td></tr></tbody></table></div></div><div class="relative z-10 p-2 rounded-lg bg-surface-container-low border border-outline-variant/20 text-[10px] text-on-surface-variant leading-relaxed"><strong class="text-on-surface block">Bank Direct Instruction Notice:</strong> This electronic NOC certifies completion of AICTE statutory tenure. M/s HDFC Bank is instructed to release the lien on FDR #FDR-HDFC-551920 in favor of the authorized society accounts upon receipt of cryptographic instruction payload.</div></div><div class="p-3 bg-surface-container border-t border-outline-variant/30 flex items-center justify-between gap-2"><button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-[12px] font-semibold flex items-center gap-1 transition-colors" onclick="downloadJSONVoucher()"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="">Download JSON Voucher</span></button><div class="flex items-center gap-2"><button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-[12px] font-semibold transition-colors" onclick="closeNOCModal()">Close</button><button class="py-2 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-[12px] font-semibold flex items-center gap-1 shadow-sm transition-all" onclick="printNOC()"><span class="material-symbols-outlined text-[16px]">print</span><span class="">Print NOC</span></button></div></div></div></div><script id="clearance-flow-scripts">window.currentClearanceCase = 'locked';function selectClearanceCase(type){window.currentClearanceCase = type;var btnLocked = document.getElementById('btn-case-locked');var btnCleared = document.getElementById('btn-case-cleared');var badge = document.getElementById('clearance-status-badge');var label = document.getElementById('clearance-target-label');var vigCard = document.getElementById('vigilance-card');var vigIcon = document.getElementById('vigilance-icon');var vigTitle = document.getElementById('vigilance-title');var vigTag = document.getElementById('vigilance-status-tag');var vigCaseTitle = document.getElementById('vigilance-case-title');var vigCaseDesc = document.getElementById('vigilance-case-desc');var finPenalty = document.getElementById('finance-penalty-text');var releaseBtn = document.getElementById('btn-release-clearance');var releaseIcon = document.getElementById('btn-release-icon');var releaseText = document.getElementById('btn-release-text');var guardText = document.getElementById('release-guard-text');if(type==='locked'){btnLocked.className='flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all bg-surface-container-lowest text-primary shadow-xs';btnCleared.className='flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all text-on-surface-variant hover:text-on-surface';badge.className='px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-badge text-label-badge';badge.textContent='1 BLOCKED';label.textContent='Active Target: FDR-ICIC-661029 (ICICI Bank • ₹20,00,000)';vigCard.className='p-space-md rounded-xl bg-error-container/40 flex flex-col gap-2 transition-all';vigIcon.textContent='policy';vigIcon.className='material-symbols-outlined text-error text-[18px]';vigTitle.textContent='2. Vigilance Cell';vigTitle.className='font-body-md text-body-md font-semibold text-on-error-container';vigTag.className='px-2 py-0.5 rounded bg-error text-on-error font-label-badge text-label-badge flex items-center gap-1';vigTag.innerHTML='<span class="material-symbols-outlined text-[12px]">block</span> ON HOLD';vigCaseTitle.textContent='Case #VIG/2025/88: Student Fee Inquiry';vigCaseTitle.className='block font-label-code text-label-code font-bold text-error';vigCaseDesc.textContent='Automated release freeze enforced on joint deposit ICICI FDR-661029. Injunction active.';finPenalty.textContent='0% Penalty (Frozen)';releaseBtn.disabled=true;releaseBtn.className='w-full py-3 px-4 rounded-xl bg-surface-container-highest text-on-surface-variant opacity-60 cursor-not-allowed font-body-md text-body-md font-bold flex items-center justify-center gap-2 transition-all';releaseIcon.textContent='lock';releaseText.textContent='Authorize Release & Draft NOC';guardText.innerHTML='<span class="material-symbols-outlined text-[14px]">lock_clock</span> Locked by Vigilance Hold (VIG/2025/88)';guardText.className='font-body-sm text-[11px] text-error flex items-center gap-1';}else{btnCleared.className='flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all bg-surface-container-lowest text-primary shadow-xs';btnLocked.className='flex-1 py-1.5 px-2 rounded-md font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 transition-all text-on-surface-variant hover:text-on-surface';badge.className='px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-badge text-label-badge font-bold';badge.textContent='ALL 4 CLEARED';label.textContent='Active Target: FDR-HDFC-551920 (HDFC Bank • ₹35,00,000)';vigCard.className='p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2 transition-all';vigIcon.textContent='verified_user';vigIcon.className='material-symbols-outlined text-primary text-[18px]';vigTitle.textContent='2. Vigilance Cell';vigTitle.className='font-body-md text-body-md font-semibold text-on-surface';vigTag.className='px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge flex items-center gap-1';vigTag.innerHTML='<span class="material-symbols-outlined text-[12px]">check_circle</span> CLEARED';vigCaseTitle.textContent='No Adverse Inquiries Registered';vigCaseTitle.className='block font-label-code text-label-code font-bold text-primary';vigCaseDesc.textContent='Vigilance scrutiny concluded without demur. Automatic release clearance signed on 17 May 2026.';finPenalty.textContent='0% Penalty (Eligible for Full NOC)';releaseBtn.disabled=false;releaseBtn.className='w-full py-3 px-4 rounded-xl bg-primary text-on-primary font-body-md text-body-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm hover:bg-primary-container active:scale-[0.99] cursor-pointer';releaseIcon.textContent='verified_user';releaseText.textContent='Authorize Release & Issue NOC';guardText.innerHTML='<span class="material-symbols-outlined text-[14px]">verified</span> All 4 Bureau Clearances Valid & Signed';guardText.className='font-body-sm text-[11px] text-primary flex items-center gap-1 font-semibold';}}function openTOTPModal(){var modal = document.getElementById('modal-totp-container');if(modal){modal.classList.remove('hidden');modal.classList.add('flex');for(var i=0;i<6;i++){var inp=document.getElementById('otp-'+i);if(inp) inp.value='';}var err=document.getElementById('totp-error-text');if(err) err.classList.add('hidden');setTimeout(function(){var first=document.getElementById('otp-0');if(first) first.focus();},100);}}function closeTOTPModal(){var modal = document.getElementById('modal-totp-container');if(modal){modal.classList.add('hidden');modal.classList.remove('flex');}}function handleOtpInput(index){var curr=document.getElementById('otp-'+index);if(curr.value.length>0&&index<5){var next=document.getElementById('otp-'+(index+1));if(next) next.focus();}}function handleOtpKey(e, index){if(e.key==='Backspace'&&!e.target.value&&index>0){var prev=document.getElementById('otp-'+(index-1));if(prev) prev.focus();}if(e.key==='Enter'){validateTOTP();}}function autoFillTOTP(){var code='123456';for(var i=0;i<6;i++){var inp=document.getElementById('otp-'+i);if(inp) inp.value=code[i];}validateTOTP();}function validateTOTP(){var entered='';for(var i=0;i<6;i++){var inp=document.getElementById('otp-'+i);entered+=inp?inp.value:'';}var err=document.getElementById('totp-error-text');var group=document.getElementById('totp-input-group');if(entered==='123456'){if(err) err.classList.add('hidden');closeTOTPModal();openNOCModal();}else{if(err) err.classList.remove('hidden');if(group){group.classList.add('animate-pulse');setTimeout(function(){group.classList.remove('animate-pulse');},400);}}}function openNOCModal(){var modal = document.getElementById('modal-noc-container');var ts = document.getElementById('noc-timestamp');if(ts){var now = new Date();ts.textContent = now.toLocaleDateString('en-IN', { day:'2-digit', month:'short', year:'numeric'}) + ', ' + now.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit' }) + ' IST';}if(modal){modal.classList.remove('hidden');modal.classList.add('flex');}}function closeNOCModal(){var modal = document.getElementById('modal-noc-container');if(modal){modal.classList.add('hidden');modal.classList.remove('flex');}}function printNOC(){window.print();}function downloadJSONVoucher(){var payload={voucher_id:'AICTE-FDR-RELEASE-2026-88491',timestamp:new Date().toISOString(),fdr_number:'FDR-HDFC-551920',institution:{pid:'1-883920112',name:'Kalinga Institute of Technology and Management'},bank:{name:'HDFC Bank Ltd',ifsc:'HDFC0001024',branch:'Nehru Place New Delhi'},amount_in_inr:{gross:3500000,deduction:0,net_payable:3500000},statutory_clearances:{regulation:{status:'CLEARED',dsc:'REG-APH-2026-904'},vigilance:{status:'CLEARED',dsc:'VIG-NOC-2026-118'},legal:{status:'CLEARED',dsc:'LEG-HC-2026-773'},finance:{status:'CLEARED',dsc:'FIN-PAY-2026-442'}},mfa_verification:{type:'TOTP_RFC6238',token_status:'VALIDATED_OK',verified_by:'RO_NRO_774'},status:'AUTHORIZATION_GRANTED'};var dataStr='data:text/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(payload,null,2));var dlAnchor=document.createElement('a');dlAnchor.setAttribute('href',dataStr);dlAnchor.setAttribute('download','AICTE_RELEASE_VOUCHER_88491.json');document.body.appendChild(dlAnchor);dlAnchor.click();dlAnchor.remove();}</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-between items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-body-sm text-[10px] mt-1">Portfolio</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="submit" href="#"><span class="material-symbols-outlined text-[20px]">upload_file</span><span class="font-body-sm text-[10px] mt-1">Submit</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="scrutiny" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-sm text-[10px] mt-1">Scrutiny</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bank-gateway" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-body-sm text-[10px] mt-1">Bank API</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[48px] h-14 transition-colors text-primary font-semibold" data-path="release-lineage" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span class="font-body-sm text-[10px] mt-1">Release</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="audit-ledger" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-sm text-[10px] mt-1">Audit</span></a></div></nav>
+
+</body></html>

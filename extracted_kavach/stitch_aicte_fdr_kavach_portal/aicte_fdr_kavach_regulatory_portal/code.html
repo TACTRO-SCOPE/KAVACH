@@ -1,0 +1,962 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-primary-fixed": "#001551", "on-tertiary-fixed-variant": "#6e3900", "tertiary-container": "#8d4b00", "surface-container-lowest": "#ffffff", "outline": "#747686", "tertiary": "#6b3700", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "primary-fixed": "#dce1ff", "inverse-primary": "#b7c4ff", "on-surface-variant": "#434655", "on-secondary-fixed-variant": "#3f465c", "surface-variant": "#d3e4fe", "primary": "#0037b0", "secondary-container": "#dae2fd", "on-background": "#0b1c30", "primary-fixed-dim": "#b7c4ff", "on-primary-container": "#cad3ff", "on-secondary-fixed": "#131b2e", "surface-tint": "#2151da", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "surface-container": "#e5eeff", "surface-container-low": "#eff4ff", "on-tertiary-container": "#ffcba3", "on-error-container": "#93000a", "inverse-surface": "#213145", "outline-variant": "#c4c5d7", "surface": "#f8f9ff", "on-surface": "#0b1c30", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#5c647a", "tertiary-fixed": "#ffdcc3", "secondary-fixed-dim": "#bec6e0", "error-container": "#ffdad6", "primary-container": "#1d4ed8", "on-tertiary-fixed": "#2f1500", "on-primary-fixed-variant": "#0039b5", "on-secondary": "#ffffff", "background": "#f8f9ff", "tertiary-fixed-dim": "#ffb77d", "surface-container-high": "#dce9ff", "error": "#ba1a1a", "surface-bright": "#f8f9ff", "secondary": "#565e74", "surface-dim": "#cbdbf5" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-xl": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-lg": "1rem", "space-md": "0.75rem" }, "fontFamily": { "body-md": ["Public Sans"], "label-numeric": ["JetBrains Mono"], "headline-lg": ["Public Sans"], "body-sm": ["Public Sans"], "headline-md": ["Public Sans"], "headline-lg-mobile": ["Public Sans"], "headline-xl-mobile": ["Public Sans"], "label-badge": ["Public Sans"], "label-code": ["JetBrains Mono"], "headline-xl": ["Public Sans"], "body-lg": ["Public Sans"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-numeric": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }], "label-badge": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "label-code": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 flex flex-col justify-between px-margin"><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">assured_workload</span></div><div class="flex flex-col"><span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">AICTE-FDR-Kavach</span><span class="font-headline-md text-headline-md text-on-surface leading-tight">Portfolio</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs pb-space-sm overflow-x-auto no-scrollbar"><button class="h-7 px-space-sm rounded-lg bg-surface-container-high flex items-center gap-space-xs text-on-surface shrink-0"><span class="material-symbols-outlined text-primary text-[14px]">badge</span><span class="font-body-sm text-body-sm">Nodal Officer</span></button><div class="h-7 px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-secondary text-[14px]">schedule</span><span class="font-label-code text-label-code">T+0 Live</span></div><button class="h-7 px-space-sm rounded-lg bg-surface-container-highest flex items-center gap-space-xs text-on-surface shrink-0"><span class="material-symbols-outlined text-primary text-[14px]">bolt</span><span class="font-body-sm text-body-sm">Dual Sign</span></button><button class="h-7 px-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-tertiary text-[14px]">flag</span><span class="font-body-sm text-body-sm">Disputed</span></button></div></div></header><main class="flex flex-col relative w-full pt-28 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- SIH Evaluator Top Bar & Control Console -->
+<section class="bg-surface-container-high px-margin py-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-wider">SIH 2026 Jury Mode</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant bg-surface-container-highest px-space-xs py-0.5 rounded">Build v4.2.9-prod</span>
+</div>
+<!-- 8-Role Persona Switcher -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Evaluator Persona (Active Role):</span>
+<span class="font-label-badge text-label-badge text-primary bg-surface-container px-space-xs rounded" id="activeRoleLabel">HQ_ADMIN</span>
+</div>
+<div class="flex gap-space-xs overflow-x-auto no-scrollbar py-1" id="personaSwitchBar">
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-primary text-on-primary font-body-sm text-[11px] font-semibold transition-all" onclick="setPersona('HQ_ADMIN', this)">HQ_ADMIN (National)</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('SCRUTINY_OFFICER', this)">Scrutiny Officer</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('REGIONAL_OFFICER', this)">Regional Officer (CRO)</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('INSTITUTION_USER', this)">Institution (PID: 1-402918210)</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('BANK_USER', this)">Bank (SBI Bhopal Main)</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('VIGILANCE_LEGAL', this)">Vigilance &amp; Legal</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('FINANCE_OFFICER', this)">Finance Officer</button>
+<button class="role-pill shrink-0 px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-[11px] transition-all" onclick="setPersona('AUDITOR', this)">Auditor (CAG-Empanelled)</button>
+</div>
+</div>
+<!-- Time-Travel Demo Clock Simulator -->
+<div class="mt-space-sm pt-space-xs bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-1.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">history_toggle_off</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Simulated Time Clock</span>
+</div>
+<span class="font-label-code text-label-code text-primary font-bold" id="clockCurrentDisplay">29 Nov 2026 (+30d)</span>
+</div>
+<div class="grid grid-cols-5 gap-1" id="clockControls">
+<button class="clock-btn py-1 text-center rounded bg-surface-container-high text-on-surface font-body-sm text-[11px]" onclick="setClock('real', '30 Oct 2026 (Live)', this)">Real (Live)</button>
+<button class="clock-btn py-1 text-center rounded bg-primary text-on-primary font-body-sm text-[11px] font-semibold" onclick="setClock('30', '29 Nov 2026 (+30d)', this)">+30 Days</button>
+<button class="clock-btn py-1 text-center rounded bg-surface-container-high text-on-surface font-body-sm text-[11px]" onclick="setClock('60', '29 Dec 2026 (+60d)', this)">+60 Days</button>
+<button class="clock-btn py-1 text-center rounded bg-surface-container-high text-on-surface font-body-sm text-[11px]" onclick="setClock('90', '28 Jan 2027 (+90d)', this)">+90 Days</button>
+<button class="clock-btn py-1 text-center rounded bg-surface-container text-on-surface-variant font-body-sm text-[11px]" onclick="setClock('reset', '30 Oct 2026 (Live)', this)">Reset</button>
+</div>
+</div>
+<!-- Simulation Alert Banner -->
+<div class="mt-space-sm bg-tertiary-fixed text-on-tertiary-fixed p-space-sm rounded flex items-start gap-space-sm shadow-sm transition-all" id="simAlertBanner">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">update</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold leading-tight">TIME-TRAVEL SIMULATION ACTIVE: +30 Days Offset</span>
+<span class="font-body-sm text-[11px] text-tertiary leading-normal mt-0.5">Maturity triggers advanced by 30 days. 18 instruments marked expiring within upcoming regulatory window. Read-only Sandbox environment.</span>
+</div>
+</div>
+<!-- 7-Scenario Quick-Jump Evaluator Pills -->
+<div class="mt-space-sm">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase">SIH Test Scenarios:</span>
+<div class="flex gap-1.5 overflow-x-auto no-scrollbar pt-1.5">
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(1)">
+<span class="text-primary font-bold">S1</span> New Submission
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(2)">
+<span class="text-error font-bold">S2</span> Discrepancy Hold
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(3)">
+<span class="text-tertiary font-bold">S3</span> Bank Gateway
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(4)">
+<span class="text-primary font-bold">S4</span> +60d Escalation
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(5)">
+<span class="text-primary font-bold">S5</span> Renewal Lineage
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(6)">
+<span class="text-primary font-bold">S6</span> Release &amp; NOC
+        </button>
+<button class="scenario-btn shrink-0 px-space-xs py-1 rounded bg-surface-container-lowest text-on-surface font-label-code text-[11px] shadow-sm flex items-center gap-1 hover:bg-surface-container-highest" onclick="jumpScenario(7)">
+<span class="text-error font-bold">S7</span> Tamper Integrity
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Jury Banner with Visual Character -->
+<div class="px-margin mt-space-sm">
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden flex items-center justify-between">
+<div class="relative z-10 max-w-[70%]">
+<div class="flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-badge text-label-badge uppercase">Statutory Kavach Protocol</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-on-primary mt-1">₹64.20 Crore</h2>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-0.5">Secured sovereign vault protecting 40 technical university trusts.</p>
+</div>
+<div class="relative z-10 flex flex-col items-end shrink-0">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest/15 backdrop-blur flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[32px]">shield_lock</span>
+</div>
+<span class="font-label-code text-[10px] text-primary-fixed mt-1">GIGW 3.0 L3</span>
+</div>
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-surface-container-highest/10 pointer-events-none"></div>
+</div>
+</div>
+<!-- KPI Metric Cards Grid (2x3 Compact Grid) -->
+<section class="px-margin mt-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Portfolio Telemetry</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Live Synchronized</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Card 1: Total Portfolio Exposure -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Total Exposure</span>
+<span class="material-symbols-outlined text-primary text-[18px]">account_balance</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-on-surface leading-tight">₹64.20 Cr</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between text-on-surface-variant font-body-sm text-[11px] bg-surface-container-low px-1.5 py-0.5 rounded">
+<span class="">200 instruments</span>
+<span class="font-semibold text-primary">40 inst.</span>
+</div>
+</div>
+<!-- Card 2: Active Instruments -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Active FDs</span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-on-surface leading-tight">142</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center gap-1 font-label-badge text-label-badge text-on-primary bg-primary px-1.5 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[12px]">done_all</span>
+<span class="">ACTIVE LIEN</span>
+</div>
+</div>
+<!-- Card 3: Expiring in 30/60/90d -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Expiring Soon</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">timelapse</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-tertiary leading-tight">18</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center gap-1 font-label-badge text-label-badge text-on-tertiary-fixed bg-tertiary-fixed px-1.5 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+<span class="">30/60/90D DUE</span>
+</div>
+</div>
+<!-- Card 4: Pending Bank Verification -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Bank Pending</span>
+<span class="material-symbols-outlined text-primary text-[18px]">sync</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-on-surface leading-tight">09</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center gap-1 font-label-badge text-label-badge text-on-surface bg-surface-container-highest px-1.5 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[12px]">api</span>
+<span class="">SFTP / API QUEUE</span>
+</div>
+</div>
+<!-- Card 5: Discrepancy Holds -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Discrepancies</span>
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-error leading-tight">12</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center gap-1 font-label-badge text-label-badge text-on-error bg-error px-1.5 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[12px]">gavel</span>
+<span class="">MISMATCH HOLD</span>
+</div>
+</div>
+<!-- Card 6: Overdue / Releases -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-body-sm text-[11px] uppercase tracking-wider font-semibold">Overdue / NOC</span>
+<span class="material-symbols-outlined text-error text-[18px]">notification_important</span>
+</div>
+<div class="font-label-numeric text-[20px] font-bold text-on-surface leading-tight">19</div>
+</div>
+<div class="mt-2 pt-1.5 flex items-center gap-1 font-label-badge text-label-badge text-on-error-container bg-error-container px-1.5 py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[12px]">lock_open</span>
+<span class="">ACTION MANDATE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Regional & Banking Analytics Summary -->
+<section class="px-margin mt-space-md">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<span class="font-headline-md text-[16px] text-on-surface font-semibold">Regional Office Distribution</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant font-medium">₹64.20 Cr Total</span>
+</div>
+<!-- Visual Region Breakdown Progress Bars -->
+<div class="space-y-2 mt-2">
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="font-medium text-on-surface">CRO (Central Bhopal)</span>
+<span class="font-label-code text-label-code text-primary font-semibold">₹14.80 Cr (23.0%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded" style="width: 23%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="font-medium text-on-surface">SRO (Southern Chennai)</span>
+<span class="font-label-code text-label-code text-primary font-semibold">₹12.50 Cr (19.4%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded" style="width: 19.4%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="font-medium text-on-surface">NRO (Northern Kanpur)</span>
+<span class="font-label-code text-label-code text-on-surface-variant font-semibold">₹9.20 Cr (14.3%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 14.3%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="font-medium text-on-surface">WRO (Western Mumbai)</span>
+<span class="font-label-code text-label-code text-on-surface-variant font-semibold">₹8.40 Cr (13.0%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 13%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-body-sm text-body-sm mb-0.5">
+<span class="font-medium text-on-surface-variant">NWRO, ERO, SWRO, SCRO</span>
+<span class="font-label-code text-label-code text-on-surface-variant font-semibold">₹19.30 Cr (30.3%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-high overflow-hidden">
+<div class="h-full bg-outline-variant rounded" style="width: 30.3%;"></div>
+</div>
+</div>
+</div>
+<!-- Bank Exposure Segmented Bar -->
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Issuing Scheduled Commercial Banks</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">5 Integrations</span>
+</div>
+<!-- Combined Segmented Graphic -->
+<div class="w-full h-3 rounded flex overflow-hidden bg-surface-container-highest">
+<div class="h-full bg-primary" style="width: 42%;" title="SBI 42%"></div>
+<div class="h-full bg-primary-container" style="width: 24%;" title="PNB 24%"></div>
+<div class="h-full bg-tertiary-container" style="width: 18%;" title="Canara 18%"></div>
+<div class="h-full bg-secondary" style="width: 11%;" title="BoB 11%"></div>
+<div class="h-full bg-outline" style="width: 5%;" title="Union 5%"></div>
+</div>
+<div class="grid grid-cols-3 gap-1 mt-2 font-body-sm text-[11px] text-on-surface">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+<span class="">SBI (42%)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container shrink-0"></span>
+<span class="">PNB (24%)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container shrink-0"></span>
+<span class="">Canara (18%)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="">BoB (11%)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline shrink-0"></span>
+<span class="">Union (5%)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filterable Data Grid Section -->
+<section class="px-margin mt-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">FDR Regulatory Queue</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Showing 4 of 200</span>
+</div>
+<!-- Filter Pills -->
+<div class="flex gap-1.5 overflow-x-auto no-scrollbar py-1" id="statusFilterBar">
+<button class="filter-pill px-space-sm py-1 rounded bg-primary text-on-primary font-body-sm text-body-sm font-semibold shrink-0" onclick="filterStatus('ALL', this)">All (200)</button>
+<button class="filter-pill px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0" onclick="filterStatus('DISCREPANCY', this)">⚠️ Discrepancy (12)</button>
+<button class="filter-pill px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0" onclick="filterStatus('EXPIRING', this)">⏳ Expiring (18)</button>
+<button class="filter-pill px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0" onclick="filterStatus('PENDING_BANK', this)">🏦 Bank Pending (9)</button>
+<button class="filter-pill px-space-sm py-1 rounded bg-surface-container text-on-surface font-body-sm text-body-sm shrink-0" onclick="filterStatus('OVERDUE', this)">🚨 Overdue (19)</button>
+</div>
+<!-- Search Input Micro-Control -->
+<div class="mt-space-sm relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-container-low" id="instSearchInput" oninput="handleSearch(this.value)" placeholder="Search by PID, FDR No, or College Name..." type="text">
+</div>
+<!-- Stacked Transaction Cards (Regulatory Mobile View) -->
+<div class="mt-space-sm space-y-space-sm" id="regulatoryCardsList">
+<!-- ITEM 1: Discrepancy Hold -->
+<article class="fdr-card bg-surface-container-lowest p-space-sm rounded-lg shadow-sm" data-status="DISCREPANCY">
+<div class="flex items-start justify-between gap-2 pb-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-on-surface font-bold">FDR-SBI-9928172</span>
+<span class="font-label-badge text-label-badge bg-surface-container-high text-primary px-1 rounded">CRO</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Vindhya Inst. of Engg</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant">PID: 1-402918210 • State Bank of India</span>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+            DISCREPANCY HOLD
+          </span>
+</div>
+<!-- Discrepancy Highlight Box -->
+<div class="bg-error-container/30 p-space-sm rounded my-space-xs flex flex-col gap-1">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Declared by Institution:</span>
+<span class="font-label-numeric font-bold text-on-surface">₹35,00,000</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-error font-semibold">AI/OCR Extracted Val:</span>
+<span class="font-label-numeric font-bold text-error">₹15,00,000</span>
+</div>
+<div class="mt-1 flex items-center gap-1 text-[11px] font-body-sm text-on-error-container font-medium">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span class="">₹20 Lakh Deficit detected against AICTE Norm Schedule.</span>
+</div>
+</div>
+<!-- Action Mandates -->
+<div class="grid grid-cols-3 gap-1 pt-1">
+<button class="py-1.5 rounded bg-primary text-on-primary font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 shadow-sm" onclick="triggerScrutiny('FDR-SBI-9928172')">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+            Scrutiny
+          </button>
+<button class="py-1.5 rounded bg-surface-container-high text-on-surface font-body-sm text-[12px] font-medium flex items-center justify-center gap-1 shadow-sm" onclick="triggerAudit('FDR-SBI-9928172')">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+            Audit
+          </button>
+<button class="py-1.5 rounded bg-surface-container-low text-on-surface-variant font-body-sm text-[12px] flex items-center justify-center gap-1" onclick="triggerExport('FDR-SBI-9928172')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+            PDF/CSV
+          </button>
+</div>
+</article>
+<!-- ITEM 2: Expiring Soon -->
+<article class="fdr-card bg-surface-container-lowest p-space-sm rounded-lg shadow-sm" data-status="EXPIRING">
+<div class="flex items-start justify-between gap-2 pb-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-on-surface font-bold">FDR-CNRB-441092</span>
+<span class="font-label-badge text-label-badge bg-surface-container-high text-primary px-1 rounded">SRO</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Cauvery Tech Campus</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant">PID: 1-771829104 • Canara Bank</span>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timelapse</span>
+            EXPIRING SOON
+          </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded my-space-xs flex justify-between items-center">
+<div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Face Value</span>
+<div class="font-label-numeric text-[16px] font-bold text-on-surface leading-tight">₹50,00,000</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-[11px] text-tertiary font-semibold">Matures: 10 Dec 2026</span>
+<div class="font-label-code text-[13px] text-tertiary font-bold">41 Days Left</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 pt-1">
+<button class="py-1.5 rounded bg-primary text-on-primary font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 shadow-sm" onclick="triggerScrutiny('FDR-CNRB-441092')">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+            Scrutiny
+          </button>
+<button class="py-1.5 rounded bg-surface-container-high text-on-surface font-body-sm text-[12px] font-medium flex items-center justify-center gap-1 shadow-sm" onclick="triggerAudit('FDR-CNRB-441092')">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+            Audit
+          </button>
+<button class="py-1.5 rounded bg-surface-container-low text-on-surface-variant font-body-sm text-[12px] flex items-center justify-center gap-1" onclick="triggerExport('FDR-CNRB-441092')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+            PDF/CSV
+          </button>
+</div>
+</article>
+<!-- ITEM 3: Bank Verification Pending -->
+<article class="fdr-card bg-surface-container-lowest p-space-sm rounded-lg shadow-sm" data-status="PENDING_BANK">
+<div class="flex items-start justify-between gap-2 pb-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-on-surface font-bold">FDR-SBIN-773190</span>
+<span class="font-label-badge text-label-badge bg-surface-container-high text-primary px-1 rounded">CRO</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Vindhya Inst. of Engg</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant">Ref: AICTE-BV-2026-000142</span>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">sync_alt</span>
+            BANK PENDING
+          </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded my-space-xs flex justify-between items-center">
+<div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Instrument Principal</span>
+<div class="font-label-numeric text-[16px] font-bold text-on-surface leading-tight">₹35,00,000</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-[11px] text-on-surface-variant">SBI SFTP Queue</span>
+<div class="font-label-code text-[12px] text-primary font-bold">Ping Sent 4h ago</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 pt-1">
+<button class="py-1.5 rounded bg-primary text-on-primary font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 shadow-sm" onclick="triggerScrutiny('FDR-SBIN-773190')">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+            Scrutiny
+          </button>
+<button class="py-1.5 rounded bg-surface-container-high text-on-surface font-body-sm text-[12px] font-medium flex items-center justify-center gap-1 shadow-sm" onclick="triggerAudit('FDR-SBIN-773190')">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+            Audit
+          </button>
+<button class="py-1.5 rounded bg-surface-container-low text-on-surface-variant font-body-sm text-[12px] flex items-center justify-center gap-1" onclick="triggerExport('FDR-SBIN-773190')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+            PDF/CSV
+          </button>
+</div>
+</article>
+<!-- ITEM 4: Overdue Instrument -->
+<article class="fdr-card bg-surface-container-lowest p-space-sm rounded-lg shadow-sm" data-status="OVERDUE">
+<div class="flex items-start justify-between gap-2 pb-space-xs">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-code text-label-code text-on-surface font-bold">FDR-PUNB-882103</span>
+<span class="font-label-badge text-label-badge bg-surface-container-high text-primary px-1 rounded">NWRO</span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold mt-0.5">Doaba College of Pharmacy</h3>
+<span class="font-label-code text-[11px] text-on-surface-variant">Punjab National Bank</span>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-error text-on-error font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">alarm_on</span>
+            OVERDUE
+          </span>
+</div>
+<div class="bg-error-container/20 p-space-sm rounded my-space-xs flex justify-between items-center">
+<div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Amount Locked</span>
+<div class="font-label-numeric text-[16px] font-bold text-on-surface leading-tight">₹15,00,000</div>
+</div>
+<div class="text-right">
+<span class="font-body-sm text-[11px] text-error font-semibold">Matured: 01 Sep 2026</span>
+<div class="font-label-code text-[12px] text-error font-bold">+59d Non-Renewed</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 pt-1">
+<button class="py-1.5 rounded bg-error text-on-error font-body-sm text-[12px] font-semibold flex items-center justify-center gap-1 shadow-sm" onclick="triggerScrutiny('FDR-PUNB-882103')">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+            Action Notice
+          </button>
+<button class="py-1.5 rounded bg-surface-container-high text-on-surface font-body-sm text-[12px] font-medium flex items-center justify-center gap-1 shadow-sm" onclick="triggerAudit('FDR-PUNB-882103')">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+            Audit
+          </button>
+<button class="py-1.5 rounded bg-surface-container-low text-on-surface-variant font-body-sm text-[12px] flex items-center justify-center gap-1" onclick="triggerExport('FDR-PUNB-882103')">
+<span class="material-symbols-outlined text-[14px]">download</span>
+            PDF/CSV
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Feedback Toast Notification Box -->
+<div class="fixed bottom-24 left-4 right-4 bg-inverse-surface text-inverse-on-surface p-space-sm rounded-lg shadow-xl hidden transition-all z-50 flex items-center justify-between" id="juryToast">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px] shrink-0" id="toastIcon">info</span>
+<span class="font-body-sm text-body-sm truncate" id="toastMessage">Action recorded</span>
+</div>
+<button class="text-inverse-on-surface hover:text-primary-fixed-dim shrink-0 ml-2" onclick="document.getElementById('juryToast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Accessible GIGW 3.0 Government Regulatory Compliance Footer -->
+<footer class="mt-space-xl px-margin pt-space-md border-t-0 bg-surface-container-low text-on-surface-variant">
+<div class="bg-surface-container p-space-sm rounded-lg shadow-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div>
+<h4 class="font-headline-md text-[14px] text-on-surface font-semibold">Dual-Signatory Sovereign Ledger</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Compliant with GIGW 3.0 &amp; WCAG 2.1 Level AA Accessibility Standards.</p>
+</div>
+</div>
+<div class="mt-2 grid grid-cols-2 gap-2 font-label-code text-[10px] bg-surface-container-lowest p-2 rounded">
+<div>
+<span class="text-on-surface-variant block">ENCRYPTION PROTOCOL:</span>
+<span class="font-bold text-on-surface">AES-256-GCM / SHA-512</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">REGULATORY AUTHORITY:</span>
+<span class="font-bold text-primary">AICTE New Delhi</span>
+</div>
+</div>
+</div>
+<!-- Security Badges Row -->
+<div class="flex items-center justify-between py-2 border-b-0 border-outline-variant font-label-badge text-[10px]">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">shield</span>
+<span class="">NIC AUDITED CERTIFIED</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">accessibility_new</span>
+<span class="">WCAG 2.1 AA PASS</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span class="">RBI REGD. SFTP</span>
+</div>
+</div>
+<!-- Emergency Helpdesk & Statutory Copyright -->
+<div class="py-space-sm text-center">
+<p class="font-body-sm text-[11px] text-on-surface-variant">
+        AICTE 24x7 Statutory Helpdesk: <span class="font-label-code font-semibold text-primary">1800-11-2350</span> • <span class="font-label-code text-primary">fdr-kavach@aicte-india.org</span>
+</p>
+<p class="font-body-sm text-[10px] text-outline mt-1">
+        Designed for Smart India Hackathon (SIH 2026). All cryptographic signatures and lien encumbrances are non-destructively simulated under AICTE Sandbox Mandate.
+      </p>
+</div>
+</footer>
+</div>
+<script>
+  // Evaluator Persona Switcher Micro-Logic
+  function setPersona(roleName, btn) {
+    document.querySelectorAll('.role-pill').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      b.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+    document.getElementById('activeRoleLabel').textContent = roleName;
+    showNotification('Persona switched to: ' + roleName, 'manage_accounts');
+  }
+
+  // Time-Travel Clock Simulator Micro-Logic
+  function setClock(offset, label, btn) {
+    document.querySelectorAll('.clock-btn').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      b.classList.add('bg-surface-container-high', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+
+    document.getElementById('clockCurrentDisplay').textContent = label;
+    const banner = document.getElementById('simAlertBanner');
+
+    if (offset === 'real' || offset === 'reset') {
+      banner.classList.add('hidden');
+      showNotification('Time Clock reset to Live Statutory Anchor (30 Oct 2026)', 'restart_alt');
+    } else {
+      banner.classList.remove('hidden');
+      banner.querySelector('span.font-body-sm').textContent = `TIME-TRAVEL SIMULATION ACTIVE: +${offset} Days Offset`;
+      showNotification(`Time Clock advanced by +${offset} days. Sandbox recalculated.`, 'schedule');
+    }
+  }
+
+  // Quick Jump Scenario Handler
+  function jumpScenario(scenarioId) {
+    const scenarios = {
+      1: { name: 'Scenario 1 (New Submission)', role: 'INSTITUTION_USER', toast: 'Jumped to PID: 1-402918210 submission workflow', icon: 'upload_file' },
+      2: { name: 'Scenario 2 (Discrepancy Hold)', role: 'SCRUTINY_OFFICER', filter: 'DISCREPANCY', toast: 'Filtered to 12 Discrepancy Holds. AI OCR Flag active.', icon: 'warning' },
+      3: { name: 'Scenario 3 (Bank Verification)', role: 'BANK_USER', filter: 'PENDING_BANK', toast: 'Switched to SBI Nodal API SFTP Queue (9 pending)', icon: 'account_balance' },
+      4: { name: 'Scenario 4 (Time-Travel +60d)', offset: '60', toast: 'Advanced simulation to +60 Days. Matures updated.', icon: 'fast_forward' },
+      5: { name: 'Scenario 5 (Renewal Lineage)', role: 'REGIONAL_OFFICER', toast: 'Loading multi-year continuous deposit lineage tree...', icon: 'account_tree' },
+      6: { name: 'Scenario 6 (Release & NOC)', role: 'FINANCE_OFFICER', filter: 'OVERDUE', toast: 'Opening Dual-Signatory Mandate Release queue.', icon: 'lock_open' },
+      7: { name: 'Scenario 7 (Audit Tamper Test)', role: 'AUDITOR', toast: 'Simulating block hash verification: SHA-512 valid.', icon: 'verified' }
+    };
+
+    const s = scenarios[scenarioId];
+    if (s.filter) {
+      const targetBtn = Array.from(document.querySelectorAll('.filter-pill')).find(p => p.textContent.includes(s.filter));
+      if (targetBtn) filterStatus(s.filter, targetBtn);
+    }
+    showNotification(s.toast, s.icon);
+  }
+
+  // Filter List Micro-Logic
+  function filterStatus(status, btn) {
+    document.querySelectorAll('.filter-pill').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      b.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+
+    const cards = document.querySelectorAll('.fdr-card');
+    cards.forEach(card => {
+      if (status === 'ALL' || card.getAttribute('data-status') === status) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  // Live Card Search Logic
+  function handleSearch(val) {
+    const term = val.toLowerCase().trim();
+    const cards = document.querySelectorAll('.fdr-card');
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(term)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  // Quick Action Notification Helpers
+  function triggerScrutiny(fdr) {
+    showNotification(`Navigating to Scrutiny Desk for ${fdr}...`, 'fact_check');
+  }
+
+  function triggerAudit(fdr) {
+    showNotification(`Fetching immutable CAG audit ledger for ${fdr}...`, 'history_edu');
+  }
+
+  function triggerExport(fdr) {
+    showNotification(`Generating digitally signed GIGW report for ${fdr}...`, 'download');
+  }
+
+  function showNotification(msg, icon) {
+    const toast = document.getElementById('juryToast');
+    const label = document.getElementById('toastMessage');
+    const ic = document.getElementById('toastIcon');
+    label.textContent = msg;
+    ic.textContent = icon || 'info';
+    toast.classList.remove('hidden');
+    clearTimeout(window._toastTimeout);
+    window._toastTimeout = setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3800);
+  }
+</script><!-- SIH Jury Presentation Mode Copilot Floating Dock -->
+<div class="fixed bottom-24 right-4 z-50 flex flex-col items-end gap-2">
+  <!-- Minimized Floating Pill Button -->
+  <button id="juryDockToggleBtn" onclick="toggleJuryDock()" class="h-10 px-3 rounded-full bg-primary text-on-primary shadow-xl flex items-center gap-2 border border-primary-fixed/30 hover:bg-primary-container transition-all">
+    <span class="material-symbols-outlined text-[18px] animate-pulse text-tertiary-fixed">target</span>
+    <span class="font-label-badge text-[12px] font-bold tracking-wider">PITCH MODE</span>
+    <span id="dockStepPill" class="font-label-code text-[11px] bg-primary-container px-2 py-0.5 rounded-full text-on-primary-container font-semibold">1 / 7</span>
+    <span id="dockToggleArrow" class="material-symbols-outlined text-[16px]">expand_less</span>
+  </button>
+
+  <!-- Expanded Floating Copilot Drawer Card -->
+  <div id="juryDockCard" class="w-[calc(100vw-2rem)] max-w-[390px] rounded-xl bg-inverse-surface/95 text-inverse-on-surface backdrop-blur-xl shadow-2xl border border-outline/30 p-space-sm transition-all overflow-hidden flex flex-col gap-2">
+    <!-- Header with Live Badge and Minimize Button -->
+    <div class="flex items-center justify-between pb-1 border-b border-outline/20">
+      <div class="flex items-center gap-1.5">
+        <div class="w-6 h-6 rounded bg-primary flex items-center justify-center text-on-primary">
+          <span class="material-symbols-outlined text-[16px]">military_tech</span>
+        </div>
+        <div>
+          <div class="font-label-badge text-[10px] tracking-wider text-primary-fixed uppercase font-bold">SIH 2026 Jury Pitch Copilot</div>
+          <div class="font-label-code text-[11px] text-inverse-on-surface font-semibold" id="copilotScenarioTracker">Scenario 1 of 7: New Submission</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+        <button onclick="toggleJuryDock()" class="text-inverse-on-surface hover:text-primary-fixed p-1 rounded" title="Minimize Drawer">
+          <span class="material-symbols-outlined text-[18px]">close_fullscreen</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scenario Title and Tags -->
+    <div class="bg-surface-container-highest/10 p-2 rounded border border-outline-variant/10 flex flex-col gap-1">
+      <div class="flex items-center justify-between gap-1">
+        <span id="copilotPillTag" class="font-label-badge text-[10px] px-1.5 py-0.5 rounded bg-primary text-on-primary font-bold">INSTITUTION_USER</span>
+        <span id="copilotReqTag" class="font-label-code text-[10px] text-tertiary-fixed bg-tertiary-container/40 px-1.5 py-0.5 rounded font-medium truncate">Req: Instant Intake &amp; OCR Verification</span>
+      </div>
+      <h4 id="copilotTitle" class="font-headline-md text-[14px] text-inverse-on-surface font-bold leading-tight mt-0.5">Scenario 1: New FDR Intake &amp; Real-Time Laser Scan</h4>
+      <p id="copilotDesc" class="font-body-sm text-[11px] text-inverse-on-surface/80 leading-normal">Scoped to PID 1-402918210 (Vindhya Inst). Demonstrates student trust statutory deposit capture with OCR field extraction.</p>
+    </div>
+
+    <!-- Target Scope Meta Info -->
+    <div class="grid grid-cols-2 gap-1.5 text-[10px] font-label-code bg-inverse-surface p-1.5 rounded border border-outline/20">
+      <div>
+        <span class="text-outline-variant block text-[9px]">TARGET ENTITY</span>
+        <span id="copilotEntity" class="font-semibold text-primary-fixed truncate block">Vindhya Inst (CRO)</span>
+      </div>
+      <div>
+        <span class="text-outline-variant block text-[9px]">TEST ASSET / LEDGER</span>
+        <span id="copilotAsset" class="font-semibold text-inverse-on-surface truncate block">PID 1-402918210</span>
+      </div>
+    </div>
+
+    <!-- One-Click Action Trigger Button -->
+    <button id="copilotActionBtn" onclick="executeCopilotAction()" class="w-full py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-sm text-[13px] font-bold shadow-md flex items-center justify-center gap-1.5 transition-all text-center">
+      <span class="material-symbols-outlined text-[16px] text-tertiary-fixed" id="copilotActionIcon">bolt</span>
+      <span id="copilotActionText" class="">⚡ Run Live OCR Scan</span>
+    </button>
+
+    <!-- Stepper Controls & Quick Reset -->
+    <div class="flex items-center justify-between pt-1 border-t border-outline/20 text-[11px]">
+      <button onclick="prevCopilotStep()" id="copilotPrevBtn" class="px-2 py-1 rounded bg-inverse-surface border border-outline/30 text-inverse-on-surface font-body-sm flex items-center gap-0.5 hover:bg-outline/20 disabled:opacity-40 disabled:pointer-events-none" disabled="">
+        <span class="material-symbols-outlined text-[14px]">arrow_back</span> Back
+      </button>
+
+      <div class="flex items-center gap-1">
+        <button onclick="resetCopilotDemo()" class="px-1.5 py-1 rounded text-outline-variant hover:text-tertiary-fixed text-[10px] font-label-code flex items-center gap-0.5" title="Reset Demo State">
+          <span class="material-symbols-outlined text-[12px]">restart_alt</span> Reset
+        </button>
+        <div class="flex gap-0.5 items-center px-1" id="copilotStepDots">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+        </div>
+      </div>
+
+      <button onclick="nextCopilotStep()" id="copilotNextBtn" class="px-2.5 py-1 rounded bg-primary text-on-primary font-body-sm font-semibold flex items-center gap-0.5 hover:bg-primary-container shadow-sm">
+        Next <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // SIH 2026 Jury Presentation Mode Engine
+  const sihScenarios = [
+    {
+      step: 1,
+      title: 'Scenario 1: New FDR Submission & Real-time OCR Laser Scan',
+      req: 'Req 1: Instant Intake & OCR Verification',
+      role: 'INSTITUTION_USER',
+      entity: 'Vindhya Inst (CRO)',
+      asset: 'PID 1-402918210',
+      desc: 'Scoped to PID 1-402918210. Simulates institution uploading ₹35 Lakh deposit receipt with automated 14-field OCR extraction.',
+      actionText: '⚡ Run Live OCR Scan',
+      actionIcon: 'document_scanner',
+      feedback: 'Laser Scan Complete: OCR extracted ₹15 Lakh vs ₹35 Lakh declared. Mismatch flag generated!',
+      toastIcon: 'fact_check',
+      filterTarget: 'ALL'
+    },
+    {
+      step: 2,
+      title: 'Scenario 2: Split-Screen Scrutiny & Defect #1 Mismatch',
+      req: 'Req 2: Regional Scrutiny & Defect Flagging',
+      role: 'SCRUTINY_OFFICER',
+      entity: 'Central Regional Office (CRO)',
+      asset: 'FDR-SBI-9928172',
+      desc: 'AI Flagged Deficit: ₹20 Lakh discrepancy detected against AICTE Norm Schedule. Places lien on hold pending correction.',
+      actionText: '⚡ Review Defect #1 Mismatch',
+      actionIcon: 'warning',
+      feedback: 'Scrutiny Desk: ₹20 Lakh Deficit placed under Statutory Hold. Notice dispatched to Principal.',
+      toastIcon: 'warning',
+      filterTarget: 'DISCREPANCY'
+    },
+    {
+      step: 3,
+      title: 'Scenario 3: CBS Bank API Verification & Maker-Checker Attestation',
+      req: 'Req 3: SFTP/CBS Direct Bank Attestation',
+      role: 'BANK_USER',
+      entity: 'SBI Branch SBIN0004210',
+      asset: 'FDR-SBIN-773190',
+      desc: 'Scheduled Commercial Bank SFTP queue. Dual-signature branch manager verification with automated lien lien-marking API.',
+      actionText: '⚡ Attest as Bank Manager',
+      actionIcon: 'verified',
+      feedback: 'Bank Verification Recorded: Branch Manager Key Attested with 256-bit signature. Lien Active.',
+      toastIcon: 'account_balance',
+      filterTarget: 'PENDING_BANK'
+    },
+    {
+      step: 4,
+      title: 'Scenario 4: Time-Travel Clock (+60d) & Lifecycle Cascades',
+      req: 'Req 4: Automated Maturity Escalation',
+      role: 'REGIONAL_OFFICER',
+      entity: 'Southern Regional Office (SRO)',
+      asset: 'FDR-CNRB-441092',
+      desc: 'Time simulator fast-forwards regulatory calendar. 18 instruments advance to impending expiry window with automated notices.',
+      actionText: '⚡ Advance Clock +60d',
+      actionIcon: 'fast_forward',
+      feedback: 'Time-Travel Active: Regulatory Clock shifted +60 Days. Expiry alert escalated to AICTE Apex.',
+      toastIcon: 'schedule',
+      filterTarget: 'EXPIRING'
+    },
+    {
+      step: 5,
+      title: 'Scenario 5: Renewal Lineage DAG & 15-Day Gap Condonation',
+      req: 'Req 5: Lineage Tracking & Gap Condonation',
+      role: 'REGIONAL_OFFICER',
+      entity: 'Mandate Lineage Ledger',
+      asset: 'FDR-BARB-2026-NEW',
+      desc: 'Demonstrates multi-year continuous deposit lineage tree with algorithmic detection and condonation of 15-day break in coverage.',
+      actionText: '⚡ Condone Gap with Remarks',
+      actionIcon: 'account_tree',
+      feedback: 'Lineage Chain Validated: 15-Day Gap condoned under AICTE Regulation 4.2. Chain continuity restored.',
+      toastIcon: 'link',
+      filterTarget: 'ALL'
+    },
+    {
+      step: 6,
+      title: 'Scenario 6: 4-Bureau Parallel Release Board & Draft NOC',
+      req: 'Req 6: Multi-Signatory Sovereign NOC',
+      role: 'HQ_ADMIN',
+      entity: 'National AICTE Apex New Delhi',
+      asset: 'FDR-PUNB-882103',
+      desc: 'Overdue instrument release workflow. Dual-signatory statutory authorization required across Finance, Legal, and Regional desks.',
+      actionText: '⚡ Authorize NOC with TOTP',
+      actionIcon: 'lock_open',
+      feedback: 'Dual-Signatory Release Authorized: Sovereign QR NOC generated for Punjab National Bank.',
+      toastIcon: 'task_alt',
+      filterTarget: 'OVERDUE'
+    },
+    {
+      step: 7,
+      title: 'Scenario 7: Cryptographic SHA-256 Audit Chain & Tamper Attack',
+      req: 'Req 7: Immutable CAG Audit Ledger',
+      role: 'AUDITOR',
+      entity: 'National Append-Only Ledger',
+      asset: 'Audit Hash-Chain (CAG)',
+      desc: 'Simulates intentional database payload manipulation; cryptographic hash verification instantly flags tamper attack.',
+      actionText: '⚡ Inject Sandbox Tamper Attack',
+      actionIcon: 'security',
+      feedback: 'Tamper Simulation: Hash Mismatch Detected! Block #4092 preserved by SHA-512 immutable ledger.',
+      toastIcon: 'shield',
+      filterTarget: 'ALL'
+    }
+  ];
+
+  let currentCopilotStep = 0;
+
+  function toggleJuryDock() {
+    const card = document.getElementById('juryDockCard');
+    const arrow = document.getElementById('dockToggleArrow');
+    if (card.classList.contains('hidden')) {
+      card.classList.remove('hidden');
+      arrow.textContent = 'expand_less';
+    } else {
+      card.classList.add('hidden');
+      arrow.textContent = 'expand_more';
+    }
+  }
+
+  function updateCopilotUI() {
+    const s = sihScenarios[currentCopilotStep];
+    document.getElementById('copilotScenarioTracker').textContent = `Scenario ${s.step} of 7: ${s.title.split(':')[1]?.split('&')[0] || ''}`;
+    document.getElementById('copilotPillTag').textContent = s.role;
+    document.getElementById('copilotReqTag').textContent = s.req;
+    document.getElementById('copilotTitle').textContent = s.title;
+    document.getElementById('copilotDesc').textContent = s.desc;
+    document.getElementById('copilotEntity').textContent = s.entity;
+    document.getElementById('copilotAsset').textContent = s.asset;
+    document.getElementById('copilotActionText').textContent = s.actionText;
+    document.getElementById('copilotActionIcon').textContent = s.actionIcon;
+    document.getElementById('dockStepPill').textContent = `${s.step} / 7`;
+
+    document.getElementById('copilotPrevBtn').disabled = (currentCopilotStep === 0);
+    const nextBtn = document.getElementById('copilotNextBtn');
+    if (currentCopilotStep === sihScenarios.length - 1) {
+      nextBtn.innerHTML = 'Complete <span class="material-symbols-outlined text-[14px]">done_all</span>';
+    } else {
+      nextBtn.innerHTML = 'Next <span class="material-symbols-outlined text-[14px]">arrow_forward</span>';
+    }
+
+    // Update dots
+    const dots = document.querySelectorAll('#copilotStepDots span');
+    dots.forEach((dot, idx) => {
+      if (idx === currentCopilotStep) {
+        dot.className = 'w-2 h-2 rounded-full bg-primary-fixed';
+      } else if (idx < currentCopilotStep) {
+        dot.className = 'w-1.5 h-1.5 rounded-full bg-primary';
+      } else {
+        dot.className = 'w-1.5 h-1.5 rounded-full bg-outline/50';
+      }
+    });
+
+    // Sync active persona button if matching role found
+    const roleBtns = Array.from(document.querySelectorAll('.role-pill'));
+    const matchingRoleBtn = roleBtns.find(b => b.getAttribute('onclick')?.includes(s.role));
+    if (matchingRoleBtn) {
+      roleBtns.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      matchingRoleBtn.classList.remove('bg-surface-container', 'text-on-surface');
+      matchingRoleBtn.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+      const label = document.getElementById('activeRoleLabel');
+      if (label) label.textContent = s.role;
+    }
+
+    // Sync filter queue
+    if (s.filterTarget && typeof filterStatus === 'function') {
+      const filterBtn = Array.from(document.querySelectorAll('.filter-pill')).find(p => p.getAttribute('onclick')?.includes(s.filterTarget));
+      if (filterBtn) filterStatus(s.filterTarget, filterBtn);
+    }
+  }
+
+  function nextCopilotStep() {
+    if (currentCopilotStep < sihScenarios.length - 1) {
+      currentCopilotStep++;
+      updateCopilotUI();
+      const s = sihScenarios[currentCopilotStep];
+      showNotification(`Jury Pitch: Loaded ${s.title.split(':')[0]} (${s.role})`, s.toastIcon);
+    } else {
+      showNotification('Jury Pitch Complete! All 7 SIH scenarios verified against regulatory rubric.', 'military_tech');
+    }
+  }
+
+  function prevCopilotStep() {
+    if (currentCopilotStep > 0) {
+      currentCopilotStep--;
+      updateCopilotUI();
+      const s = sihScenarios[currentCopilotStep];
+      showNotification(`Jury Pitch: Returned to ${s.title.split(':')[0]}`, s.toastIcon);
+    }
+  }
+
+  function resetCopilotDemo() {
+    currentCopilotStep = 0;
+    updateCopilotUI();
+    const s = sihScenarios[0];
+    showNotification('Jury Pitch Demo Reset to Step 1 (New Submission)', 'restart_alt');
+  }
+
+  function executeCopilotAction() {
+    const s = sihScenarios[currentCopilotStep];
+    const btn = document.getElementById('copilotActionBtn');
+    const origContent = btn.innerHTML;
+    btn.classList.add('opacity-75');
+    btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span> Executing Sandbox Trigger...';
+    
+    setTimeout(() => {
+      btn.classList.remove('opacity-75');
+      btn.innerHTML = origContent;
+      showNotification(s.feedback, s.toastIcon);
+    }, 450);
+  }
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCopilotUI();
+  });
+  // Immediate call in case already parsed
+  updateCopilotUI();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-between items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[48px] h-14 transition-colors text-primary font-semibold" data-path="portfolio" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-body-sm text-[10px] mt-1">Portfolio</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="submit" href="#"><span class="material-symbols-outlined text-[20px]">upload_file</span><span class="font-body-sm text-[10px] mt-1">Submit</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="scrutiny" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-sm text-[10px] mt-1">Scrutiny</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bank-gateway" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="font-body-sm text-[10px] mt-1">Bank API</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="release-lineage" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span class="font-body-sm text-[10px] mt-1">Release</span></a><a class="flex flex-col items-center justify-center min-w-[48px] h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="audit-ledger" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-body-sm text-[10px] mt-1">Audit</span></a></div></nav>
+
+</body></html>

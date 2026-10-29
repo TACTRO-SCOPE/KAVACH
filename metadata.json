@@ -1,0 +1,6 @@
+{
+  "name": "AICTE-FDR-Kavach Regulatory FinTech Portal",
+  "description": "Statutory Fixed Deposit Receipt (FDR) verification, joint encashment mandates, OCR scrutiny vault, and cryptographic audit ledger portal for AICTE regulatory oversight.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
